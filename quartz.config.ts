@@ -3,17 +3,14 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    // --- YOUR CUSTOMIZATIONS START HERE ---
-    pageTitle: "🌍 Globe Seekers Campaign", // The title of your website
-    enableSPA: true, // Speeds up site navigation
-    enablePopovers: true, // Enables link previews
-    analytics: null, // Set to your plausible.io/google analytics domain if you want analytics
+    pageTitle: "🌍 Globe Seekers Campaign",
+    enableSPA: true,
+    enablePopovers: true,
+    analytics: null,
     locale: "en-US",
-    baseUrl: "globeseekers", 
-    ignorePatterns: ["private", "templates", ".obsidian"], // Folders to exclude from the public site
+    baseUrl: "globeseekers",
+    ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
-    // --- YOUR CUSTOMIZATIONS END HERE ---
-    
     theme: {
       cdnCaching: true,
       typography: {
@@ -49,10 +46,16 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "filesystem"], // Give frontmatter dates higher priority
+        priority: ["frontmatter", "filesystem"],
       }),
       Plugin.Latex(),
-      Plugin.SyntaxHighlighting(),
+      Plugin.SyntaxHighlighting({
+        theme: {
+          light: "github-light",
+          dark: "github-dark",
+        },
+        keepBackground: false,
+      }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
@@ -67,6 +70,8 @@ const config: QuartzConfig = {
       Plugin.FolderPage(),
       Plugin.TagPage(),
       Plugin.ContentIndex({
+        // This is the key change: these are now options for the plugin
+        // instead of separate plugins, preventing the plain text output.
         enableSiteMap: true,
         enableRSS: true,
       }),
