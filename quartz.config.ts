@@ -9,8 +9,7 @@ const config: QuartzConfig = {
     enablePopovers: true, // Enables link previews
     analytics: null, // Set to your plausible.io/google analytics domain if you want analytics
     locale: "en-US",
-    // Base URL must be the name of your repository if deploying to adunis.github.io/globe-seekers-vault
-    baseUrl: "globe-seekers-vault", 
+    baseUrl: "globeseekers", 
     ignorePatterns: ["private", "templates", ".obsidian"], // Folders to exclude from the public site
     defaultDateType: "created",
     // --- YOUR CUSTOMIZATIONS END HERE ---
