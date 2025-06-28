@@ -1,0 +1,45 @@
+name: Deploy Quartz
+on:
+  # This action runs when you push to the 'main' branch of this (quartz) repo.
+  push:
+    branches:
+      - main
+  # This action also runs when it receives a 'vault-updated' signal from your vault repo.
+  repository_dispatch:
+    types: [vault-updated]
+  # This allows you to run it manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # This is required to push the gh-pages branch.
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history for git-based features
+
+      # This is the crucial step to pull in your latest vault notes
+      - name: Update Submodules
+        run: git submodule update --init --recursive --remote
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20" # Use a modern Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # The GITHUB_TOKEN is automatically provided by GitHub Actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # The folder that contains the built website
+          publish_dir: ./public
