@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Fungorgo</title><meta charset="utf-8"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="🌍 Globe Seekers Campaign"/><meta property="og:title" content="Fungorgo"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Fungorgo"/><meta name="twitter:description" content="FUNGORGO: LA METASTASI RIBELLE (Voce di un Mercante Cauto o di una Guida degli Scavatori): “Ah, Fungorgo… Non lasciarti ingannare dal nome o dalla puzza."/><meta property="og:description" content="FUNGORGO: LA METASTASI RIBELLE (Voce di un Mercante Cauto o di una Guida degli Scavatori): “Ah, Fungorgo… Non lasciarti ingannare dal nome o dalla puzza."/><meta property="og:image:alt" content="FUNGORGO: LA METASTASI RIBELLE (Voce di un Mercante Cauto o di una Guida degli Scavatori): “Ah, Fungorgo… Non lasciarti ingannare dal nome o dalla puzza."/><meta property="og:image" content="https://globeseekers/static/og-image.png"/><meta property="og:image:url" content="https://globeseekers/static/og-image.png"/><meta name="twitter:image" content="https://globeseekers/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="globeseekers"/><meta property="og:url" content="https://globeseekers/locations/Fungorgo"/><meta property="twitter:url" content="https://globeseekers/locations/Fungorgo"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="FUNGORGO: LA METASTASI RIBELLE (Voce di un Mercante Cauto o di una Guida degli Scavatori): “Ah, Fungorgo… Non lasciarti ingannare dal nome o dalla puzza."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvZ2xvYmVzZWVrZXJzL2dsb2Jlc2Vla2Vycy9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcGFkZGluZzogMnJlbTtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://globeseekers/index.xml"/></head><body data-slug="locations/Fungorgo"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">🌍 Globe Seekers Campaign</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../locations/">locations</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Fungorgo</a></div></nav><h1 class="article-title">Fungorgo</h1><p show-comma="true" class="content-meta"><time datetime="2025-06-28T17:09:37.549Z">Jun 28, 2025</time><span>9 min read</span></p></div></div><article class="popover-hint"><p><strong>FUNGORGO: LA METASTASI RIBELLE</strong></p>
+<p><strong>(Voce di un Mercante Cauto o di una Guida degli Scavatori):</strong><br/>
+“Ah,
+Fungorgo… Non lasciarti ingannare dal nome o dalla puzza. Certo, ci
+sono funghi che crescono anche sui denti dei morti, ma sotto c’è…
+vita. Una vita strana, sudata, che lotta per respirare tra le spore e le
+pattuglie degli Osservatori. È un mercato nero con le radici, una città
+che marcisce e combatte allo stesso tempo. Ci trovi di tutto: veleni
+rari, segreti sussurrati, un pasto caldo (se non fai troppe domande
+sull’ingrediente principale), e una pugnalata alle spalle. È il cuore
+pulsante - o forse dovrei dire pulsante di micelio - della resistenza
+contro Vecna qui intorno. Ma non dimenticare mai… anche i muri hanno
+spore, e le spore ascoltano.”</p>
+<p><strong>DESCRIZIONE GENERALE:</strong></p>
+<p>Fungorgo non è un idilliaco villaggio fungino. È una <strong>città mineraria/commerciale pre-Discesa in rovina</strong>, probabilmente sorta vicino a ricchi depositi minerali o a un incrocio di vecchie rotte carovaniere Thayane, che è stata infestata e parzialmente trasformata
+dal Velo della Vedova Cremisi e da altri funghi opportunisti dopo la
+Grande Discesa. Immagina strade acciottolate incrinate da cui spuntano
+cappelli fungini luminosi, edifici di pietra annerita puntellati da
+travi di micelio indurito, e una costante, leggera nebbia di spore
+colorate che fluttua nell’aria, specialmente nei quartieri bassi o nelle
+rovine non reclamate.</p>
+<p>La città si sviluppa su più livelli, sfruttando forse le rovine di vecchie miniere o terrazzamenti naturali. C’è un <strong>“Distretto Alto”</strong>, relativamente più “pulito”, dove si concentrano le forze di Vecna e le attività commerciali più “ufficiali”, e un <strong>“Distretto Basso” (o “Le Radici”)</strong>,
+un labirinto di vicoli, tunnel minerari riadattati e rovine invase dai
+funghi, che è il cuore del mercato nero e della resistenza dei Falchi
+Cremisi.</p>
+<p><strong>L’ECOSISTEMA FUNGORGO:</strong></p>
+<ul>
+<li>
+<p><strong>I Funghi Dominanti:</strong></p>
+<ul>
+<li>Velo della Vedova Cremisi:
+Onnipresente. Usato dai Falchi come risorsa (vedi background Fazione).
+La sua bioluminescenza fornisce gran parte dell’illuminazione notturna
+nei Distretti Bassi.</li>
+<li>Soffio di Midollo (Marrow Cap):
+Funghi bianchi e duri come ossa, che crescono su vecchi cadaveri o
+depositi organici. Vengono macinati per creare una farina nutriente ma
+dal sapore terribile (la base alimentare di molti abitanti poveri).</li>
+<li>Sussurro-Ombra (Shadowsilk Morel):
+Funghi neri e filamentosi che crescono in luoghi bui e umidi. Le loro
+fibre possono essere tessute per creare stoffe resistenti e che
+attutiscono il suono (usate da spie e ladri).</li>
+<li>Guardiano di Pietra (Stone Sentinel):
+Grandi funghi piatti e durissimi, simili a scudi di pietra, che
+crescono lentamente sulle rovine. I Falchi li usano come barricate
+naturali o copertura.</li>
+</ul>
+</li>
+<li>
+<p><strong>Economia Contesa:</strong></p>
+<ul>
+<li><strong>Risorse Legali (Controllate da Vecna):</strong> Estrazione di minerali rari dalle vecchie miniere (metalli, gemme strane, forse depositi di <strong>“Pietra-Anima”</strong>
+<ul>
+<li>un minerale che assorbe energia necrotica o spirituale, fondamentale
+per Protonecropoli), tassazione sul (poco) commercio ufficiale che passa
+di lì.</li>
+</ul>
+</li>
+<li><strong>Risorse Illegali (Mercato Nero / Falchi):</strong>
+Coltivazione e lavorazione del Velo Cremisi (spore allucinogene,
+veleni, reagenti per i Falchi), contrabbando di merci fuori e dentro
+Fungorgo, vendita di informazioni, recupero di artefatti dalle rovine
+circostanti, produzione di cibo a base di Soffio di Midollo, tessitura
+del Sussurro-Ombra. È qui che si muovono gli <strong>ingredienti o i precursori</strong> per i Faith Babies o altri esperimenti di Vecna, rubati o dirottati dalle spedizioni ufficiali.</li>
+</ul>
+</li>
+<li>
+<p><strong>La Vita Quotidiana:</strong>
+È dura. La cenere bianca si mescola alle spore. L’aria è pesante. C’è
+una costante tensione tra gli abitanti comuni (che cercano solo di
+sopravvivere), le forze di occupazione di Vecna e i ribelli Falchi
+Cremisi. La lealtà è merce rara e pericolosa. Esistono taverne
+improvvisate nelle Radici (dove si beve un infuso di funghi fermentati),
+piccoli mercati dove si scambiano beni di prima necessità e
+informazioni, e officine nascoste (non solo dei Falchi, ma anche
+artigiani indipendenti).</p>
+</li>
+</ul>
+<p><strong>FAZIONI PRESENTI A FUNGORGO:</strong></p>
+<ol>
+<li>
+<p><strong>Le Forze di Vecna (“Gli Osservatori”):</strong></p>
+<ul>
+<li><strong>Descrizione:</strong>
+Non sono i Caroniti di Vryss (che operano più sul campo), ma una
+guarnigione più stanziale e organizzata, forse appartenente a un’altra
+branca dell’esercito di Vecna o a una forza di polizia segreta interna.
+Potrebbero chiamarsi “Gli Osservatori” o “La Guardia del Segreto”. Sono <strong>umani viventi</strong> (cultisti addestrati, soldati mercenari legati a Vecna, personale amministrativo corrotto) e <strong>non-morti minori</strong>
+(scheletri, zombi usati per lavori pesanti o come guardie di basso
+livello), comandati da ufficiali umani o da necromanti di medio livello.</li>
+<li><strong>Quartier Generale:</strong> Il <strong>“Bastione dell’Occhio Vigile”</strong>,
+una vecchia fortezza o palazzo governativo nel Distretto Alto, ora
+rinforzato con simboli di Vecna e pattugliato costantemente.</li>
+<li><strong>Obiettivi:</strong>
+Mantenere il controllo (apparente) sulla città, supervisionare
+l’estrazione/spedizione delle risorse verso Protonecropoli, raccogliere
+informazioni sui ribelli, identificare ed eliminare i leader dei Falchi
+Cremisi, reprimere qualsiasi segno di dissenso o culto non autorizzato.
+Usano spie, informatori, interrogatori e raid mirati nei Distretti
+Bassi.</li>
+<li><strong>Leader Locale:</strong> <strong>Prefetto Malkor (Umano Chierico/Mago di Vecna - CR 6/7):</strong>
+Un uomo severo e paranoico sulla cinquantina, vestito con abiti scuri
+di buona fattura. Non è un combattente eccezionale, ma un abile
+amministratore, un discreto incantatore divino (domini Conoscenza,
+Tirannia) e un maestro nell’uso di spie e metodi intimidatori. È più
+interessato a mantenere l’ordine e a inviare rapporti positivi a
+Protonecropoli che a sporcarsi le mani. Teme il fallimento più della
+morte. (Nota: Nome simile a Malakor, l’eremita, ma personaggio diverso. Potrebbe creare confusione o essere un aggancio narrativo).</li>
+<li><strong>Forze Tipiche:</strong> <strong>Guardia Cittadina di Fungorgo (Guard - CR 1/2)</strong>, <strong>Accolito di Vecna (Acolyte - CR 1)</strong>, <strong>Spia dell’Occhio Vigile (Spy - CR 2)</strong>, <strong>Scheletro Bracciante (Skeleton Guard - CR -1)</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>I Falchi Cremisi (Resistenza Radicata):</strong></p>
+<ul>
+<li>
+<p><strong>Presenza:</strong>
+Sono la forza dominante nei Distretti Bassi (“Le Radici”). Controllano i
+tunnel minerari abbandonati, le rovine più infestate dai funghi e il
+mercato nero. La loro presenza è evidente: graffiti ribelli (un falco
+che artiglia un occhio), funghi rossi coltivati in “giardini” nascosti,
+sentinelle fungoidi sui tetti.</p>
+</li>
+<li>
+<p><strong>Attività:</strong>
+Contrattacco alle forze di Vecna (imboscate, sabotaggi alle spedizioni
+di risorse), protezione (a modo loro) degli abitanti delle Radici,
+gestione del mercato nero, reclutamento di nuovi membri (spesso tra i
+disperati), coltivazione e sperimentazione con il Velo Cremisi.</p>
+</li>
+<li>
+<p><strong>Leader (Apparente):</strong> <strong>B.B. Secondo</strong>.
+Opera da un quartier generale nascosto nelle profondità delle Radici,
+forse una vecchia camera di consiglio mineraria trasformata in sala
+strategica fungoide.</p>
+</li>
+<li>
+<p><strong>Figure Chiave (Oltre a Jarek/Ryka):</strong></p>
+<ul>
+<li><strong>Sciamano del Micelio Grok (Druido/Oracolo - CR 4):</strong>
+Interprete della “Madre Micelio”, esperto in veleni fungini e rituali
+strani. Potrebbe avere influenza quasi quanto B.B. Secondo su alcuni
+Falchi.</li>
+<li><strong>Nix lo Sporeweaver (Alchimista/Ladro Goblin - CR 3):</strong> Responsabile della creazione di bombe e veleni a base di spore. Caotico e inaffidabile.</li>
+<li><strong>“Mamma” Elara (Guaritrice/Oste - CR 1):</strong>
+Umana anziana che gestisce una taverna/infermeria nascosta nelle
+Radici. Usa rimedi a base di funghi (alcuni efficaci, altri pericolosi).
+Conosce tutti i pettegolezzi e le storie del sottosuolo. Potrebbe
+essere un contatto iniziale per i PG.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Abitanti Comuni &amp; Indipendenti:</strong></p>
+<ul>
+<li>La
+maggioranza silenziosa. Minatori, piccoli artigiani, mercanti
+disperati, famiglie che cercano di sopravvivere. Sono presi nel mezzo.
+Alcuni simpatizzano segretamente con i Falchi, altri fanno da
+informatori per gli Osservatori per paura o guadagno. La maggior parte
+cerca solo di tenere la testa bassa.</li>
+<li><strong>Gilda dei Minatori (Fantasma):</strong>
+Esisteva una potente gilda prima di Vecna. Alcuni discendenti o
+ex-membri potrebbero ancora operare in segreto, conoscendo passaggi
+minerari dimenticati o avendo vecchie mappe.</li>
+<li><strong>Contrabbandieri Indipendenti:</strong>
+Non affiliati ai Falchi, cercano solo profitto spostando merci dentro e
+fuori Fungorgo. Conoscono rotte pericolose ma potrebbero essere
+assoldati.</li>
+</ul>
+</li>
+</ol>
+<p><strong>ATMOSFERA E QUIRKS DI FUNGORGO:</strong></p>
+<ul>
+<li><strong>Odore Pervasivo:</strong> Un misto di terra umida, marciume dolciastro (funghi), polvere minerale e fumo acre.</li>
+<li><strong>Illuminazione Naturale/Fungina:</strong>
+Il Distretto Alto ha lanterne a olio o torce sorvegliate. Le Radici
+sono illuminate dalla bioluminescenza inquietante dei funghi rossi e
+verdi.</li>
+<li><strong>Spore Costanti:</strong>
+Una leggera foschia di spore colorate è quasi sempre presente
+nell’aria, specialmente nelle Radici. Questo ha effetti a lungo termine
+sulla salute e sulla mente (paranoia, tosse cronica, suscettibilità alle
+malattie fungine).</li>
+<li><strong>Architettura Ibrida:</strong>
+Pietra antica che si fonde con strutture fungine viventi. Muri che
+pulsano debolmente, pavimenti coperti da un sottile strato di micelio
+scivoloso.</li>
+<li><strong>Suoni:</strong>
+Un sottofondo di gocciolamenti nelle gallerie, il ronzio di insetti
+strani attratti dai funghi, il rumore attutito dei picconi dalle miniere
+attive, occasionali grida soffocate o esplosioni lontane (combattimenti
+tra fazioni?).</li>
+</ul>
+<p><strong>COLLEGAMENTO AI FAITH BABIES E PROTONECROPOLI:</strong></p>
+<p>Fungorgo è cruciale per Vecna non solo per i minerali, ma perché qui si trovano <strong>ingredienti specifici e precursori biologici</strong> necessari per la creazione dei Faith Babies nella Forgiacarne di Protonecropoli o per altri reagenti necromantici.</p>
+<ul>
+<li><strong>Il Velo Cremisi Modificato:</strong> Forse non è il fungo stesso, ma una variante specifica
+coltivata (o trovata) solo nelle profondità delle miniere sotto
+Fungorgo, le cui spore hanno proprietà uniche nel preparare i tessuti
+mortali all’infusione degli N-Shard.</li>
+<li><strong>La Pietra-Anima:</strong>
+Il minerale estratto qui potrebbe essere usato per stabilizzare
+l’energia degli N-Shard o per creare i contenitori/incubatori per i
+Faith Babies.</li>
+<li><strong>Estratti Alchemici:</strong>
+Altri funghi o minerali unici della zona potrebbero essere trasformati
+in reagenti fondamentali per la melma nutritiva o i processi di
+condizionamento usati nella Forgiacarne.</li>
+</ul>
+<p><strong>Le
+spedizioni che partono da Fungorgo verso Protonecropoli, supervisionate
+dagli Osservatori, sono quindi bersagli primari per B.B. Secondo e i
+Falchi Cremisi.</strong>
+Intercettarle significa danneggiare direttamente la produzione dei
+Faith Babies e privare Vecna di risorse vitali. Il dossier di Ylvina
+probabilmente contiene dettagli su queste spedizioni, sulle rotte, sui
+tipi di materiali e forse sui metodi di trasporto.</p>
+<p><strong>PLOT HOOKS A FUNGORGO:</strong></p>
+<ul>
+<li>
+<p><strong>Contattare B.B. Secondo:</strong>
+Trovare “Mamma” Elara o un altro contatto nelle Radici, superare la
+diffidenza di Jarek/Ryka, raggiungere il quartier generale nascosto.</p>
+</li>
+<li>
+<p><strong>Indagare sulle Spedizioni:</strong>
+Usare le informazioni del dossier (o rubarne altre dagli Osservatori)
+per pianificare un’intercettazione di un carico destinato a
+Protonecropoli (potrebbe essere una missione data da B.B. Secondo).</p>
+</li>
+<li>
+<p><strong>Esplorare le Miniere:</strong>
+Cercare risorse (Pietra-Anima? Velo Cremisi speciale?), passaggi
+segreti, o scoprire cosa si nasconde nelle profondità (mostri
+dimenticati? Antiche rovine Thayane?).</p>
+</li>
+<li>
+<p><strong>Conflitto tra Fazioni:</strong> Essere coinvolti in uno scontro tra Falchi e Osservatori, o dover scegliere da che parte stare in una disputa locale.</p>
+</li>
+<li>
+<p><strong>La Verità sulla Simbiosi:</strong>
+Indagare sugli effetti a lungo termine del fungo o sulla natura della
+Madre Micelio. Esiste una cura? O un modo per controllarla?</p>
+</li>
+<li>
+<p><strong>Liberare Prigionieri:</strong>
+Gli Osservatori potrebbero avere catturato membri dei Falchi o civili
+sospetti. Liberarli potrebbe guadagnare la fiducia dei ribelli.</p>
+</li>
+</ul>
+<hr/>
+<h2 id="gallery">Gallery<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gallery" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="../gallery/9ac81322-adf9-4697-9617-1c0eb64d9c99.png" width="auto" height="auto" alt/>
+<img src="../gallery/8651b3f5-2a60-487b-bc52-b2cd9b7cf127.png" width="auto" height="auto" alt/>
+<img src="../gallery/9173db8f-c4b1-43e6-b434-72dd7f93f69e.png" width="auto" height="auto" alt/>
+<img src="../gallery/529c0b7a-28af-40e7-979a-9531635ceef0.png" width="auto" height="auto" alt/>
+<img src="../gallery/9e3eeae5-727c-4a9a-b7eb-bc9e46e1d2f9.png" width="auto" height="auto" alt/>
+<img src="../gallery/53efb67c-3afb-4c5a-a1e0-297db2161063.png" width="auto" height="auto" alt/>
+<img src="../gallery/bc348c90-9776-4b7d-b432-ef326a9957d6.png" width="auto" height="auto" alt/>
+<img src="../gallery/a89a9916-236e-477d-ba53-c74cb6617d54.png" width="auto" height="auto" alt/>
+<img src="../gallery/e814ab3c-a960-4b5c-9be0-96e47281074d.png" width="auto" height="auto" alt/>
+<img src="../gallery/40a18c46-0c78-46e0-92a4-f82820e4fe8e.png" width="auto" height="auto" alt/>
+<img src="../gallery/21d00cd0-9178-43ba-b0fe-815e682db9f5.png" width="auto" height="auto" alt/>
+<img src="../gallery/2ec7c9a1-bac4-48c9-b93b-bd8eb0e8bb48.png" width="auto" height="auto" alt/>
+<img src="../gallery/21f5b57f-8bb4-4057-9113-355f55247bcd.png" width="auto" height="auto" alt/>
+<img src="../gallery/247a0517-5106-43fb-ac09-e4a328721214.png" width="auto" height="auto" alt/>
+<img src="../gallery/f3b320da-1430-4f71-8a11-714dbf147b92.png" width="auto" height="auto" alt/>
+<img src="../gallery/0c2f073e-3089-44e2-a520-6da37300b39a.png" width="auto" height="auto" alt/>
+<img src="../gallery/af2c64f2-634d-4ed3-80bb-024397627789.png" width="auto" height="auto" alt/>
+<img src="../gallery/40c3fb47-7a97-41b6-a129-33d0326d0278.png" width="auto" height="auto" alt/>
+<img src="../gallery/81228cb3-b00d-4ca2-930d-4df4db5c33fc.png" width="auto" height="auto" alt/>
+<img src="../gallery/3640b927-2e0c-4451-bad2-3fe53f422d51.png" width="auto" height="auto" alt/>
+<img src="../gallery/25b6b58d-798b-40dc-83c4-5315710d2474.png" width="auto" height="auto" alt/>
+<img src="../gallery/aaf8d4e3-bc4a-418c-8d0c-5a02b4ab6172.png" width="auto" height="auto" alt/>
+<img src="../gallery/c2a45624-a4d9-4852-952e-1d68bcc34703.png" width="auto" height="auto" alt/>
+<img src="../gallery/4e9459e1-ae92-4a23-a306-c39e8121b9b7.png" width="auto" height="auto" alt/>
+<img src="../gallery/772bdf33-9d98-4dec-a0a8-c95f1798bbc7.png" width="auto" height="auto" alt/>
+<img src="../gallery/aa0a1479-7258-4965-a5ae-22fd9098026c.png" width="auto" height="auto" alt/>
+<img src="../gallery/f42772e7-9064-436f-822e-04fa024766b4.png" width="auto" height="auto" alt/>
+<img src="../gallery/cb0d846e-2f6c-4c97-864c-23d9531fc2c8.png" width="auto" height="auto" alt/>
+<img src="../gallery/fe56066e-666c-451b-9f30-97a7b6d58c4d.png" width="auto" height="auto" alt/>
+<img src="../gallery/602205ff-4f0d-444d-a342-2012cc0bf1f3.png" width="auto" height="auto" alt/>
+<img src="../gallery/a3ed40a5-39e0-47af-85ec-0c09e1a822df.png" width="auto" height="auto" alt/>
+<img src="../gallery/18bc5fcb-4675-47b1-9dd1-14a5602643b1.png" width="auto" height="auto" alt/>
+<img src="../gallery/3a7155ff-77db-4de6-ad20-ef4cd34600cd.png" width="auto" height="auto" alt/>
+<img src="../gallery/ab4cf6a8-e1d2-4c85-980a-127c9bfe7f4c.png" width="auto" height="auto" alt/>
+<img src="../gallery/c125bd6c-6736-41dc-b980-dda8bf54e140.png" width="auto" height="auto" alt/>
+<img src="../gallery/a882c0df-17ab-43d1-9e41-52515f4deb3c.png" width="auto" height="auto" alt/>
+<img src="../gallery/eafdf369-cb08-4381-9c33-edbf33890d8b.png" width="auto" height="auto" alt/>
+<img src="../gallery/da3b003a-fb3a-4b0e-925b-c9a979f82de3.png" width="auto" height="auto" alt/>
+<img src="../gallery/6189ee9c-4604-419e-a759-0064bcc90c9a.png" width="auto" height="auto" alt/>
+<img src="../gallery/6e5cff94-4ad8-48a0-861f-2af4649726ad.png" width="auto" height="auto" alt/>
+<img src="../gallery/6fae4fb3-4391-46bf-9e36-23b636cdf7f3.png" width="auto" height="auto" alt/>
+<img src="../gallery/e0b74823-fa7e-43b0-99fb-bc0c41ac8aa1.png" width="auto" height="auto" alt/>
+<img src="../gallery/d2ed9707-a52f-4e5e-addf-eec1264cfac3.png" width="auto" height="auto" alt/>
+<img src="../gallery/0637c454-da7d-4e2c-a96d-dae8ab4b66d3.png" width="auto" height="auto" alt/>
+<img src="../gallery/7f768638-47fb-4ee1-809c-6e52e82dac62.png" width="auto" height="auto" alt/>
+<img src="../gallery/8a898697-08fe-4cbc-a50e-e5556b5c7709.png" width="auto" height="auto" alt/>
+<img src="../gallery/4776e0d3-ad1f-42f5-a3f1-e6c26d3783eb.png" width="auto" height="auto" alt/>
+<img src="../gallery/cc536ab1-4cd1-4570-815f-807f31857659.png" width="auto" height="auto" alt/>
+<img src="../gallery/65b34181-8587-4c12-9b0d-a4a1e09ab46d.png" width="auto" height="auto" alt/>
+<img src="../gallery/9568d8a6-3562-4070-ac79-9250a67e7287.png" width="auto" height="auto" alt/>
+<img src="../gallery/86391646-c2e8-42b8-9cb6-2681593239c7.png" width="auto" height="auto" alt/>
+<img src="../gallery/d8af30b2-f37a-48eb-afe9-10e82e4dd3fc.png" width="auto" height="auto" alt/>
+<img src="../gallery/9d4e356d-48ef-4572-ac64-32ce83787d0e.png" width="auto" height="auto" alt/>
+<img src="../gallery/b9377e4a-05fe-4220-b799-6cdadd23ed62.png" width="auto" height="auto" alt/>
+<img src="../gallery/40b967a3-a5d6-41ab-a4ca-9a696155f9fd.png" width="auto" height="auto" alt/>
+<img src="../gallery/b0bfcd23-08c0-4ad0-99ee-2f461e6325f3.png" width="auto" height="auto" alt/>
+<img src="../gallery/dc851ab4-f3a3-46bb-910c-294874f4f882.png" width="auto" height="auto" alt/>
+<img src="../gallery/1c461bdd-9a65-462c-96cb-8d3caf5440ec.png" width="auto" height="auto" alt/>
+<img src="../gallery/0cf15b29-830f-4479-851f-338a7ded79f7.png" width="auto" height="auto" alt/>
+<img src="../gallery/a9621b61-3dc9-4b04-be74-d0c028a48baf.png" width="auto" height="auto" alt/>
+<img src="../gallery/d80597dc-461a-43f6-b788-655eaaf30ece.png" width="auto" height="auto" alt/>
+<img src="../gallery/0b5f1190-63e0-4153-ae0b-9bf57ca0803d.png" width="auto" height="auto" alt/>
+<img src="../gallery/c077d8c4-0d0a-44f9-a314-9082ed3740ad.png" width="auto" height="auto" alt/></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="../postscript.js" type="module"></script></html>
