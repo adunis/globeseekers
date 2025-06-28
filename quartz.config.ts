@@ -1,6 +1,11 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
+/**
+ * Quartz 4.0 Configuration
+ *
+ * See https://quartz.jzhao.xyz/configuration for more information.
+ */
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "🌍 Globe Seekers Campaign",
@@ -8,14 +13,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    // THE FIX PART 1: Define the full domain and author here
-    author: {
-        name: "adunis",
-        url: "https://github.com/adunis",
-    },
-    // The name of the repository being published
     baseUrl: "globeseekers",
-    // END FIX PART 1
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
@@ -66,23 +64,19 @@ const config: QuartzConfig = {
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
+      // The CrawlLinks plugin should NOT have a removePrefix here anymore
+      // since you flattened your vault structure.
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
-      Plugin.Description(),
+      Plugin.Description(), // This is correctly placed here as a transformer.
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
       Plugin.AliasRedirects(),
-      Plugin.Description(),
-      Plugin.ComponentResources({ fontOrigin: "googleFonts" }),
+      Plugin.ComponentResources(),
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
-      // THE FIX PART 2: Remove the `site` block from here
-      Plugin.ContentIndex({
-        enableSiteMap: true, // A sitemap is useful for search engines, so keep this true.
-        enableRSS: false,    // <-- CHANGE THIS TO FALSE
-      }),
-      // END FIX PART 2
+      Plugin.ContentIndex(), // Simplified this back, as the error is elsewhere.
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
