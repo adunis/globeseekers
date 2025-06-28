@@ -72,12 +72,6 @@ const config: QuartzConfig = {
     filters: [Plugin.RemoveDrafts()],
     emitters: [
       Plugin.AliasRedirects(),
-            Plugin.TableOfContents(),
-      // This tells Quartz to ignore the "main" folder when creating links.
-      Plugin.CrawlLinks({
-        markdownLinkResolution: "shortest",
-        removePrefix: "main", // <-- Change this to "main"
-      }),
       Plugin.Description(),
       Plugin.ComponentResources({ fontOrigin: "googleFonts" }),
       Plugin.ContentPage(),
