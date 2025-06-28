@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Le Fortezze Divine</title><meta charset="utf-8"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="🌍 Globe Seekers Campaign"/><meta property="og:title" content="Le Fortezze Divine"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Le Fortezze Divine"/><meta name="twitter:description" content="Okay GM, ecco la riscrittura completa e ampliata delle Fortezze Divine, incorporando l’intera lista di divinità fornita, assegnando leader e aiutanti, e dettagliando le azioni specifiche di ciascun dio durante la Grande Discesa."/><meta property="og:description" content="Okay GM, ecco la riscrittura completa e ampliata delle Fortezze Divine, incorporando l’intera lista di divinità fornita, assegnando leader e aiutanti, e dettagliando le azioni specifiche di ciascun dio durante la Grande Discesa."/><meta property="og:image:alt" content="Okay GM, ecco la riscrittura completa e ampliata delle Fortezze Divine, incorporando l’intera lista di divinità fornita, assegnando leader e aiutanti, e dettagliando le azioni specifiche di ciascun dio durante la Grande Discesa."/><meta property="og:image" content="https://globeseekers/static/og-image.png"/><meta property="og:image:url" content="https://globeseekers/static/og-image.png"/><meta name="twitter:image" content="https://globeseekers/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="globeseekers"/><meta property="og:url" content="https://globeseekers/main/locations/Le-Fortezze-Divine"/><meta property="twitter:url" content="https://globeseekers/main/locations/Le-Fortezze-Divine"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Okay GM, ecco la riscrittura completa e ampliata delle Fortezze Divine, incorporando l’intera lista di divinità fornita, assegnando leader e aiutanti, e dettagliando le azioni specifiche di ciascun dio durante la Grande Discesa."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvZ2xvYmVzZWVrZXJzL2dsb2Jlc2Vla2Vycy9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcGFkZGluZzogMnJlbTtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="main/locations/Le-Fortezze-Divine"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">🌍 Globe Seekers Campaign</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../main/">Welcome to the Globe Seekers Campaign</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../main/locations/">locations</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Le Fortezze Divine</a></div></nav><h1 class="article-title">Le Fortezze Divine</h1><p show-comma="true" class="content-meta"><time datetime="2025-06-28T16:42:48.776Z">Jun 28, 2025</time><span>26 min read</span></p></div></div><article class="popover-hint"><p>Okay
+GM, ecco la riscrittura completa e ampliata delle Fortezze Divine,
+incorporando l’intera lista di divinità fornita, assegnando leader e
+aiutanti, e dettagliando le azioni specifiche di ciascun dio durante la
+Grande Discesa. Preparati, sarà un elenco lungo e oscuro.</p>
+<hr/>
+<p><strong>LE FORTEZZE DIVINE</strong></p>
+<p>Dopo
+la Grande Discesa, le città-fortezza divine rappresentano l’apice del
+potere terreno degli Antichi Dei. Questi insediamenti non sono soltanto
+rifugi, ma autentici baluardi di autorità celeste, concepiti per
+controllare il mondo mortale. Ogni centro incarna i valori e le energie
+del dio (o degli dei dominanti) che lo sovrintende, creando un ambiente
+inedito: un santuario per i devoti e al contempo una minaccia per gli
+estranei.</p>
+<ul>
+<li><strong>Rifugi per i devoti:</strong>
+All’interno delle mura, i seguaci della divinità regnante possono
+condurre una vita relativamente ordinaria, pero’ al contempo ogni dio
+impone alla propria comunità consuetudini, pratiche e regole peculiari,
+che possono apparire insolite o addirittura inquietanti per chi non è
+completamente assorbito dalla fede.</li>
+<li><strong>Espansione dell’influenza divina:</strong>
+La forza di questi insediamenti si estende oltre le mura, irradiandosi
+nelle Terre Spezzate circostanti. Essi esercitano un impatto militare,
+sociale e politico su città e borghi limitrofi, contribuendo a
+diffondere la religione del dio e a far rispettare il divieto di
+venerare le divinità imprigionate (Vordekai, B.B. e Morun Tag). Finché
+sorge una città-fortezza sacra in una regione, il culto degli dei
+confinati non può radicarsi.</li>
+<li><strong>Il Campione:</strong>
+Ogni città-fortezza è amministrata da un campione designato dalla
+divinità residente (o dalla più potente tra quelle presenti), che ne
+funge da rappresentante e detiene l’autorità spirituale all’interno del
+centro. Questo incaricato può delegare poteri militari, sociali e
+politici ad altri oppure decidere di mantenere il controllo totale
+sull’amministrazione. Spesso si tratta di figure di grande rilievo,
+scelte per la loro incrollabile fede, devozione e capacità di comando,
+che fungono da vera e propria mano del dio sulla terra, garantendo il
+funzionamento dell’insediamento e dei territori circostanti secondo la
+sua volontà.</li>
+</ul>
+<hr/>
+<p>🌅 <strong>Lathandyr, The Eternal Dawn</strong></p>
+<ul>
+<li><strong>Leader:</strong> Lathander (Alba, Rinnovamento, Ottimismo)</li>
+<li><strong>Aiutanti:</strong> Tyr (Luce Solare, Giustizia), Sune (Bellezza, Preservazione)</li>
+<li><strong>Regione:</strong> Animated Battlefields (Campi di Battaglia Animati - Ex-Cormyr?)</li>
+<li><strong>La Discesa di Lathander:</strong> Offeso dall’ascesa di “falsi salvatori”, Lathander trasformò la sua promessa di rinnovamento in un <strong>ciclo infinito di purificazione solare</strong>. Decretò un’alba perenne sulle terre che lo avevano tradito, bruciando la terra e gli spiriti. Scatenò <strong>Piaghe della Luce Sacra</strong>, febbri che consumavano i corpi dall’interno, e diede potere ai suoi seguaci più fanatici, trasformandoli in <strong>Angeli dell’Alba Punitrice</strong>
+la cui radiosità era dolore. Il suo ottimismo divenne un dogma
+spietato: la sofferenza era necessaria per una “rinascita” forzata
+secondo la sua volontà.</li>
+<li><strong>Il Contributo di Tyr:</strong>
+Vedendo la legge infranta dall’eresia dei Nuovi Dei, Tyr prestò la sua
+forza a Lathander, infondendo la luce solare con il potere della <strong>giustizia implacabile</strong>. I raggi non solo bruciavano, ma marchiavano
+i colpevoli, rendendoli visibili a tutti. Le leggi di Lathandyr
+divennero rigide come quelle di Tyrastia, con punizioni rapide eseguite
+dai suoi Grifoni Solari.</li>
+<li><strong>Il Tocco di Sune:</strong>
+Per preservare la “bellezza” dell’ordine divino di Lathander, Sune
+infuse la città con un’aura che rendeva ogni cosa esterna repellente e
+grottesca. Le sue sacerdotesse divennero custodi di una bellezza sterile
+e immutabile, punendo ogni imperfezione o segno di decadenza con
+l’esilio nelle terre arse o la trasformazione in statue di luce dorata e
+sofferente.</li>
+<li><strong>Lore:</strong>
+Una cattedrale di marmo sanguinante le cui fessure trasudano luce
+dorata. I raggi del “sole eterno” scolpiscono ombre parlanti nelle
+pietre, ombre che sussurrano promesse di resurrezione… a patto di
+sostituire la propria carne con polvere d’ossa dei caduti.</li>
+<li><strong>Usanze:</strong> Rito del Primo Sangue (tagliarsi per bagnare le mura all’alba), Matrimoni d’Ombra (scambio di frammenti d’ombra).</li>
+<li><strong>Flora &amp; Fauna:</strong> Girasoli Cannibali (divorano chi si ferma all’ombra), Cavalli Fantasma (ossa luminose che guidano verso trincee infestate).</li>
+<li><strong>Sopravvivenza:</strong> Indossare abiti neri per confondere le ombre, offrire un occhio alle sentinelle d’oro per passare.</li>
+</ul>
+<hr/>
+<p>🌀 <strong>Mystralis, The Arcane Spire</strong></p>
+<ul>
+<li><strong>Leader:</strong> Mystra (Stelle, Magia, Continuità)</li>
+<li><strong>Aiutanti:</strong> Oghma (Eco, Lore), Vecna (Lore, Rivelazione - rivale/osservatore), Kelemvor (Inverno, Giudizio).</li>
+<li><strong>Regione:</strong> Netherese Scar (Cicatrice Netherese)</li>
+<li><strong>La Discesa di Mystra:</strong> Tradita nel suo dominio, Mystra non distrusse la magia, la <strong>incatenò</strong>. Decretò che la Trama sarebbe stata stabile solo dove lei permetteva, scatenando altrove <strong>Tempeste di Mana Selvaggio</strong> (che crearono la Cicatrice Netherese e mutarono la vita) e <strong>Carestie di Mana</strong>.
+Divenne la custode assoluta, la cui approvazione era necessaria per
+ogni incantesimo significativo. La conoscenza arcana divenne un
+privilegio sorvegliato, non un diritto.</li>
+<li><strong>Il Contributo di Oghma:</strong> Vedendo la conoscenza magica sfuggire al controllo, Oghma aiutò Mystra a <strong>catalogare e controllare</strong>
+la magia permessa. Le biblioteche di Mystralis divennero archivi dove
+la storia della magia veniva riscritta secondo la versione di Mystra, e
+le formule proibite venivano sigillate o trasformate in trappole per gli
+incauti. L’eco della conoscenza divenne uno strumento di sorveglianza.</li>
+<li><strong>L’Interesse di Vecna:</strong>
+Vecna, pur essendo rivale di Mystra nel dominio della conoscenza, vide
+un’opportunità. Infiltrò agenti sottili a Mystralis, non per sfidarla
+apertamente, ma per <strong>carpirne i segreti</strong>,
+studiare le sue restrizioni e forse scoprire debolezze nella sua stessa
+Trama controllata. La presenza di Mystralis vicino alla Cicatrice
+Netherese (ricca di N-Shard) era un bonus.</li>
+<li><strong>Il Giudizio di Kelemvor:</strong>
+Il Dio del Giudizio Inevitabile vide la necessità dell’ordine di
+Mystra. Le sue energie invernali raffreddarono gli eccessi del mana
+selvaggio ai confini di Mystralis, creando zone di stasi arcana. Approvò
+l’idea che la magia, come la vita, dovesse avere regole rigide e un
+giudizio finale per chi le infrangeva.</li>
+<li><strong>Lore:</strong>
+Torre di cristallo pulsante sospesa su un vortice di formule
+matematiche viventi. I mattoni sono frammenti di incantesimi proibiti, e
+le scale si riscrivono ogni notte secondo le paure di chi le percorre.</li>
+<li><strong>Usanze:</strong> Battesimo del Vuoto (bere inchiostro astrale), Danze Euclidee (placare geometrie instabili).</li>
+<li><strong>Flora &amp; Fauna:</strong> Poliedri Sanguinanti (cristalli che replicano organi), Ragni di Möbius (tessono ragnatele a 4 dimensioni).</li>
+<li><strong>Sopravvivenza:</strong> Risolvere enigmi matematici, indossare abiti senza cuciture.</li>
+</ul>
+<hr/>
+<p>⚔️ <strong>Anhurion, Il Grande Sole</strong></p>
+<ul>
+<li><strong>Leader:</strong> Anhur (Guerra, Onore, Temporali)</li>
+<li><strong>Aiutanti:</strong> Tyr (Giustizia), Bane (Leadership, Disciplina), Talos (Violenza, Passione)</li>
+<li><strong>Regione:</strong> Demon-Haunted Ruins (Rovine Infestate dai Demoni)</li>
+<li><strong>La Discesa di Anhur:</strong> Il dio della guerra giusta divenne il dio della <strong>guerra totale</strong>. Decretò che l’onore si dimostrava solo nella battaglia senza quartiere contro gli eretici e i deboli. Scatenò <strong>Tempeste del Conflitto</strong>,
+non solo piogge e fulmini, ma tempeste psichiche che alimentavano l’ira
+e l’odio, spingendo le nazioni a combattersi. Le rovine infestate dai
+demoni non furono purificate, ma trasformate in campi di addestramento
+dove i suoi guerrieri dovevano dimostrare il loro valore contro il male
+supremo.</li>
+<li><strong>Il Contributo di Tyr:</strong> Qui, la giustizia di Tyr divenne quella del campo di battaglia. Aiutò Anhur a stabilire un <strong>codice marziale ferreo</strong>,
+dove ogni vittoria contro un nemico “ingiusto” (cioè, chiunque non
+seguisse Anhur) era un atto di giustizia divina. La luce solare di Tyr
+divenne uno stendardo sotto cui marciare verso guerre sante.</li>
+<li><strong>Il Tocco di Bane:</strong> Bane fornì la <strong>disciplina e la strategia</strong>
+necessarie per trasformare la furia di Anhur in un’efficace macchina da
+guerra. Le sue legioni insegnarono tattiche spietate, l’importanza
+della gerarchia assoluta e della paura come strumento di comando. Le sue
+energie oscure si mescolarono alla furia divina di Anhur, creando
+soldati tanto coraggiosi quanto crudeli.</li>
+<li><strong>La Furia di Talos:</strong> Talos aggiunse la pura, caotica <strong>passione della distruzione</strong>.
+Le tempeste di Anhur divennero più violente, i suoi guerrieri furono
+pervasi da una furia berserker alimentata dal dio delle tempeste. Talos
+gioiva nel vedere la guerra di Anhur come un’altra forma della sua amata
+distruzione.</li>
+<li><strong>Lore:</strong>
+Fortezza di ossa di drago fuso, dove ogni merlo è un teschio di demone
+incatenato. L’aria sa di ferro e zolfo, e le mura trasudano un sudore
+nero che corrode le armi dei vivi.</li>
+<li><strong>Usanze:</strong> Banchetto della Carne Inversa (autocannibalismo rigenerativo), Notte delle Lance (recuperare armi maledette dalle rovine).</li>
+<li><strong>Flora &amp; Fauna:</strong> Rose di Carne (fiori che sbocciano da ferite), Canidi a Due Teste (metà lupo, metà demone).</li>
+<li><strong>Sopravvivenza:</strong> Sfregarsi cenere di demone sulla pelle, offrire il proprio nome alle mura per asilo temporaneo.</li>
+</ul>
+<hr/>
+<p>🌪️ <strong>Airspur, The Elemental Spire</strong></p>
+<ul>
+<li><strong>Leader:</strong> Umberlee (Oceani, Imprevedibilità, Rischio)</li>
+<li><strong>Aiutanti:</strong> Talos (Tempeste, Violenza), Tiamat (Uragani, Sovranità).</li>
+<li><strong>Regione:</strong> Elemental Battlegrounds (Campi di Battaglia Elementali)</li>
+<li><strong>La Discesa di Umberlee:</strong>
+La Regina Zorra vide nel caos elementale della Discesa la perfetta
+manifestazione della sua natura imprevedibile e capricciosa. Non cercò
+di calmare gli elementi, ma di <strong>cavalcarli e amplificarli</strong>. Scatenò <strong>Tsunami continentali</strong>,
+trasformando pianure in mari interni temporanei, e Maelstrom arcani che
+mischiavano aria, acqua e fuoco. La sua “punizione” fu l’incertezza
+assoluta, dove la terra stessa poteva diventare un nemico liquido o
+tempestoso da un momento all’altro. Incoraggiò il rischio e il gioco
+d’azzardo con la propria vita come unica forma di devozione.</li>
+<li><strong>Il Contributo di Talos:</strong> Alleato naturale di Umberlee, Talos aggiunse la sua furia. Le tempeste di Umberlee furono caricate di <strong>fulmini e venti distruttivi</strong>. I suoi seguaci gioivano insieme a quelli di Umberlee nel danzare sull’orlo della distruzione elementale.</li>
+<li><strong>L’Intervento di Tiamat:</strong>
+La Regina dei Draghi Cromatici vide negli scontri elementali
+un’opportunità per affermare la sua sovranità. I suoi draghi volarono
+attraverso le tempeste, i loro soffii che si aggiungevano al caos
+(uragani di acido, bufere di neve velenosa). Aggiunse un elemento di <strong>predazione tirannica</strong> al caos naturale, costringendo gli abitanti a pagare tributi anche per la (scarsa) protezione dalle tempeste.</li>
+<li><strong>Lore:</strong>
+Città sospesa su tornado perenni e onde pietrificate, dove le case sono
+relitti di navi incastonate in rocce volanti o gusci di elementali
+imprigionati. Gli abitanti respirano nebbia salina carica di elettricità
+statica e pregano affinché la prossima ondata non li spazzi via.</li>
+<li><strong>Usanze:</strong>
+Sacrificio del Relitto (offrire navi o tesori alle profondità ventose),
+Battesimi Marini (neonati gettati nelle tempeste d’acqua sottostanti, i
+pochi che tornano sono considerati benedetti).</li>
+<li><strong>Flora &amp; Fauna:</strong>
+Coralli Elettrici (crescono sulle rocce, emettono scariche), Kraken
+delle Nuvole (predatori tentacolari che nuotano nelle tempeste).</li>
+<li><strong>Sopravvivenza:</strong> Usare paracadute fatti di vele rubate, offrire perle preziose alle correnti d’aria per placarle.</li>
+</ul>
+<hr/>
+<p>🎭 <strong>Maskyr, The Masked Cathedral</strong></p>
+<ul>
+<li>
+<p><strong>Leader:</strong> Cyric (Miraggi, Cambiamento, Libertà - intesa come caos)</p>
+</li>
+<li>
+<p><strong>Aiutanti:</strong> Shar (Nuova Luna, Distacco), Lolth (Ambizione, Adattabilità), Vecna (Rivelazione, Segreti).</p>
+</li>
+<li>
+<p><strong>Regione:</strong> Sembian Shrouds (Veli Sembian)</p>
+</li>
+<li>
+<p><strong>La Discesa di Cyric:</strong>
+Il Principe delle Menzogne vide nella Discesa l’apoteosi del
+cambiamento e della libertà dalla vecchia realtà. La sua punizione fu la
+<strong>dissoluzione della verità e dell’identità</strong>. Scatenò <strong>Epidemie di Follia Divina</strong>,
+dove le persone perdevano il senso di sé, cambiavano personalità
+casualmente, o vedevano miraggi indistinguibili dalla realtà. Incoraggiò
+la menzogna, il tradimento e il caos sociale come forme supreme di
+“libertà” dalle catene della logica e della morale.</p>
+</li>
+<li>
+<p><strong>Il Contributo di Shar:</strong> La Signora della Perdita aiutò Cyric a tessere <strong>veli di oblio e distacco</strong>.
+Nelle aree influenzate, i ricordi diventavano fragili, i legami
+affettivi si dissolvevano, e le persone perdevano interesse nel passato o
+nel futuro, vivendo solo per l’inganno del momento presente. L’oscurità
+di Shar nascose le trame di Cyric.</p>
+</li>
+<li>
+<p><strong>L’Intrigo di Lolth:</strong>
+La Regina Ragno vide nel caos di Cyric un terreno fertile per la sua
+ambizione. I suoi agenti si infiltrarono, usando il cambiamento costante
+per scalare posizioni sociali, eliminare rivali e tessere reti di
+potere nascoste sotto le maschere e le illusioni. L’adattabilità Drow
+prosperava dove l’identità era incerta.</p>
+</li>
+<li>
+<p><strong>L’Osservazione di Vecna:</strong>
+Vecna era affascinato dal caos mentale creato da Cyric. Vedeva ogni
+mente spezzata, ogni segreto rubato da un’identità fittizia, come una
+potenziale aggiunta alla sua collezione. I suoi agenti osservavano e
+registravano, imparando nuovi modi per manipolare la percezione e la
+memoria.</p>
+</li>
+<li>
+<p><strong>Lore:</strong>
+Labirinto di cappelle dove ogni altare è uno specchio deformante che
+mostra desideri o paure. I sacerdoti indossano maschere viventi che si
+nutrono dei loro volti in cambio di potere illusorio. L’aria profuma di
+incenso allucinogeno.</p>
+</li>
+<li>
+<p><strong>Usanze:</strong>
+Mercato delle Identità (scambio di nomi, ricordi, volti), Confessioni
+Invertite (peccati piantati che crescono come alberi velenosi).</p>
+</li>
+<li>
+<p><strong>Flora &amp; Fauna:</strong> Edere Mnestiche (assorbono ricordi), Gufi Senza Volto (rubano voci).</p>
+</li>
+<li>
+<p><strong>Sopravvivenza:</strong> Creare maschere personali per confondere gli specchi, pagare i mendicanti con sussurri per mappe.</p>
+<p><strong>Sharothis, La Fortezza delle Tenebre Infinite</strong></p>
+<ul>
+<li><strong>Leader:</strong> Shar (Nuova Luna, Riflessione, Distacco)</li>
+<li><strong>Aiutanti:</strong> Myrkul (Paludi, Decadenza, Rinnovamento - inteso come oblio), Bhaal (Predazione, Necessità - del nulla).</li>
+<li><strong>Regione:</strong> Valli dell’Eco Perduto</li>
+<li><strong>La Discesa di Shar:</strong> La Signora della Perdita non scatenò distruzione attiva, ma <strong>soffocò la luce e la speranza</strong>. Estese le sue <strong>Zone di Buio Morto</strong>
+dove non solo la luce, ma anche le emozioni positive, i ricordi cari e
+persino i legami divini venivano lentamente erosi e consumati, lasciando
+gusci apatici. Il suo “attacco” fu il freddo, silenzioso insinuarsi
+della disperazione e del nichilismo. Incoraggiò il tradimento non per
+ambizione (come Lolth), ma come atto di distacco finale dai legami
+illusori della vita.</li>
+<li><strong>Il Contributo di Myrkul:</strong>
+Il Signore delle Ossa, vedendo il decadimento accelerato causato da
+Shar, aggiunse la sua influenza. Le Zone di Buio Morto si sovrapposero a
+<strong>Paludi dell’Anima Stagnante</strong>,
+dove non solo la speranza moriva, ma i corpi stessi iniziavano a
+decadere più rapidamente, e gli spiriti dei morti non trapassavano ma
+rimanevano intrappolati in un’apatia senza fine, nutrimento per Myrkul e
+Shar. Il suo “rinnovamento” era la trasformazione in non-morti privi di
+volontà.</li>
+<li><strong>Il Tocco di Bhaal:</strong>
+Il Signore dell’Omicidio vide nel regno di Shar il terreno di caccia
+perfetto. La necessità della morte non era più per il sacrificio o la
+predazione, ma come <strong>atto finale di distacco</strong>,
+un dono di oblio concesso ai disperati. I suoi assassini non uccidevano
+per contratto o piacere, ma come sacerdoti che offrivano la “pace” del
+nulla alle vittime scelte da Shar o Myrkul.</li>
+<li><strong>Lore:</strong>
+Una città scolpita nell’oscurità stessa, dove le mura sono ombre
+condensate e le strade si spostano per inghiottire gli intrusi. Gli
+abitanti, privi di volto, comunicano attraverso sussurri che solo i
+traditori possono udire. La luce è un crimine punito con l’esilio nel
+Vuoto Sussurrante.</li>
+<li><strong>Usanze:</strong> Mercato delle Ombre (segreti scambiati per ombre servitrici), Notte dei Volti Dimenticati (auto-mutilazione rituale del volto).</li>
+<li><strong>Flora &amp; Fauna:</strong> Fiori di Velenombra (cancellano ricordi), Ragni del Silenzio (tessono bozzoli di mutismo).</li>
+<li><strong>Sopravvivenza:</strong> Legarsi con nodi complessi per confondere le ombre, parlare in rima per ingannare i sussurri.</li>
+</ul>
+<hr/>
+<p>🕸️ <strong>Lolthara, La Città delle Ragnatele Eterne</strong></p>
+<ul>
+<li><strong>Leader:</strong> Lolth (Grotte, Ambizione, Adattabilità)</li>
+<li><strong>Aiutanti:</strong> Bhaal (Predazione), Tiamat (Sovranità - su chi le è utile), Cyric (Cambiamento, Libertà - dalle vecchie alleanze).</li>
+<li><strong>Regione:</strong> Abissi della Discordia (Forse nel Sottosuolo o in profonde fosse superficiali)</li>
+<li><strong>La Discesa di Lolth:</strong> La Regina Ragno usò la Discesa come scusa per <strong>scatenare i Drow sulla superficie</strong>
+in modo massiccio e organizzato. Mentre gli altri dei erano distratti,
+lei aprì portali, sfruttò le faglie create dalle tempeste di mana e
+guidò i suoi figli in una campagna di <strong>infiltrazione, terrore e assassinio mirato</strong>.
+Non cercò di conquistare vaste terre apertamente, ma di destabilizzare i
+regni esistenti, eliminare potenziali rivali (specialmente chierici di
+divinità elfiche “buone”) e stabilire teste di ponte per il suo dominio
+sotterraneo. Incoraggiò il tradimento e la lotta interna come sempre, ma
+su scala globale.</li>
+<li><strong>Il Contributo di Bhaal:</strong> La predazione e l’omicidio erano strumenti naturali per Lolth. Bhaal fornì ai suoi assassini Drow <strong>benedizioni oscure</strong>,
+rendendoli ancora più letali e difficili da individuare. L’omicidio
+divenne non solo un mezzo per un fine, ma un rituale gradito a entrambi
+gli dei.</li>
+<li><strong>L’Alleanza con Tiamat:</strong>
+Tiamat, vedendo l’efficacia dei metodi di Lolth, strinse un’alleanza
+pragmatica. I draghi cromatici fornirono copertura aerea o potenza di
+fuoco per le incursioni Drow in cambio di tesori, schiavi o informazioni
+raccolte dalla rete di spie di Lolth. Era un’alleanza basata
+sull’interesse reciproco, pronta a essere tradita da entrambe le parti.</li>
+<li><strong>Il Caos di Cyric:</strong>
+Il caos diffuso da Cyric fu utile a Lolth, creando confusione e
+opportunità per i suoi agenti di infiltrarsi e manipolare società già
+destabilizzate. Lolth sfruttò la libertà dal vecchio ordine per
+affermare la propria.</li>
+<li><strong>Lore:</strong>
+Un dedalo di tunnel avvolti in tele che pulsano come cuori. Le torri
+sono exuvie di ragni divini, e l’aria è densa di veleni che trasformano i
+polmoni in seta. Le sacerdotesse, con arti innestati di zampe
+chitinose, tessono trame politiche e fisiche.</li>
+<li><strong>Usanze:</strong>
+Danze della Mutazione (prova su fili sospesi, fallimento = drider),
+Festa delle Exuvie (impersonare defunti con pelle di ragno).</li>
+<li><strong>Flora &amp; Fauna:</strong> Funi Velenose (liane allucinogene), Scorpioni a Due Code (verità/menzogna).</li>
+<li><strong>Sopravvivenza:</strong> Sputare per sciogliere le tele, offrire un dito come tassa ai ponti di ragnatela.</li>
+</ul>
+<hr/>
+<p>📚 <strong>Oghmaris, Il Bastione della Saggezza Proibita</strong></p>
+<ul>
+<li><strong>Leader:</strong> Oghma (Eco, Lore, Creatività)</li>
+<li><strong>Aiutanti:</strong> Helm (Torri di Guardia, Vigilanza, Dovere), Geb (Roccia, Tradizione, Permanenza), Vecna (Lore, Rivelazione - rivale/infiltrato).</li>
+<li><strong>Regione:</strong> Piane delle Parole Perdute</li>
+<li><strong>La Discesa di Oghma:</strong>
+Di fronte alla marea di “falsa” conoscenza (i poteri dei Nuovi Dei, la
+psionica, i segreti del Reame Remoto), Oghma non cercò di illuminare, ma
+di <strong>controllare la narrativa</strong>. Impose un <strong>Dogma della Verità Approvata</strong>.
+I suoi bardi e saggi divennero censori, i suoi templi fortezze dove i
+testi venivano purgati o riscritti. La creatività fu permessa solo se
+serviva a glorificare gli Dei Antichi o a condannare le eresie. La
+“punizione” per chi cercava conoscenza proibita era la <strong>Cancellazione Mnemonica</strong> o la trasformazione in <strong>Archivi Viventi</strong>, menti svuotate usate per immagazzinare dati approvati.</li>
+<li><strong>Il Contributo di Helm:</strong> Il Vigile vide il pericolo nella conoscenza incontrollata. Aiutò Oghma a costruire <strong>Torri dell’Osservazione Arcana</strong> e a stabilire una <strong>Guardia della Conoscenza</strong>
+per sorvegliare biblioteche, accademie e persino conversazioni private.
+Il dovere divenne obbedienza all’ortodossia intellettuale.</li>
+<li><strong>Il Tocco di Geb:</strong> Geb fornì la <strong>permanenza e la tradizione</strong>.
+Aiutò a incidere le leggi e le storie approvate nella pietra stessa, a
+creare archivi immutabili (e inaccessibili). La sua influenza rese
+difficile cambiare o mettere in discussione la “verità” stabilita da
+Oghma, ancorandola alla tradizione e alla stabilità della roccia.</li>
+<li><strong>L’Infiltrazione di Vecna:</strong> Vecna, maestro della conoscenza nascosta, vedeva Oghmaris come una sfida e un tesoro. I suoi agenti cercavano di <strong>rubare i testi proibiti</strong> prima che venissero distrutti o di <strong>infiltrare la gerarchia</strong> per corrompere gli archivi dall’interno, sostituendo la verità di Oghma con la propria.</li>
+<li><strong>Lore:</strong>
+Una biblioteca vivente dove i libri sono incatenati a scaffali d’ossa.
+Le pagine si nutrono della carne di chi legge, e gli scaffali si
+riorganizzano per nascondere testi eretici. I bibliotecari sono mummie
+con occhi fatti di inchiostro.</li>
+<li><strong>Usanze:</strong>
+Patto della Pergamena Vuota (diventare personaggi di storie riscritte),
+Purga delle Verità (libri “bugiardi” bruciati, ceneri diventano
+parassiti).</li>
+<li><strong>Flora &amp; Fauna:</strong> Libri Carnivori (tomi con denti d’osso), Corvi Mnemonici (rubano parole e concetti).</li>
+<li><strong>Sopravvivenza:</strong> Leggere a lume di candela di sego umano, bruciare un ricordo prima di fare domande.</li>
+</ul>
+<hr/>
+<p>⚡ <strong>Talorith, La Città dei Fulmini Incatenati</strong></p>
+<ul>
+<li>
+<p><strong>Leader:</strong> Talos (Incendi, Violenza, Passione)</p>
+</li>
+<li>
+<p><strong>Aiutanti:</strong> Tiamat (Uragani), Umberlee (Imprevedibilità), Anhur (Temporali).</p>
+</li>
+<li>
+<p><strong>Regione:</strong> Pianure del Tuono Senza Fine</p>
+</li>
+<li>
+<p><strong>La Discesa di Talos:</strong> Il Dio delle Tempeste <strong>esultò</strong>
+nella Grande Discesa. Non fu una punizione mirata, ma un’orgia di
+distruzione catartica. Amplificò ogni disastro naturale: trasformò
+incendi boschivi in <strong>tempeste di fuoco</strong> che consumavano intere regioni, terremoti in <strong>faglie viventi</strong> che inghiottivano città, semplici temporali in <strong>diluvi incessanti carichi di fulmini neri</strong>
+che spaccavano la terra. La sua “punizione” era la dimostrazione che la
+civiltà era fragile e la furia della natura (la sua furia) era l’unica
+vera potenza.</p>
+</li>
+<li>
+<p><strong>Il Contributo di Tiamat:</strong> Tiamat aggiunse i suoi <strong>uragani e tempeste di soffio draconico</strong>
+alla furia di Talos, vedendola come un modo per spazzare via i deboli e
+affermare il dominio dei più forti (cioè, lei e i suoi draghi).</p>
+</li>
+<li>
+<p><strong>Il Caos di Umberlee:</strong>
+L’imprevedibilità di Umberlee rese le tempeste di Talos ancora più
+terrificanti. Fulmini che colpivano dal nulla in cieli sereni, onde
+anomale che risalivano i fiumi durante i temporali.</p>
+</li>
+<li>
+<p><strong>L’Ira di Anhur:</strong> Anche Anhur contribuì, prestando il potere dei suoi <strong>temporali di guerra</strong> alle tempeste di Talos, aggiungendo un elemento di furia divina mirata alla distruzione elementale.</p>
+</li>
+<li>
+<p><strong>Lore:</strong>
+Una metropoli di ferro e fulmini, dove le torri sono parafulmini
+giganti e le strade sono solchi scavati da scariche elettriche. Gli
+abitanti hanno nervi esposti che assorbono energia dai temporali, ma
+ogni lampo consuma anni di vita.</p>
+</li>
+<li>
+<p><strong>Usanze:</strong>
+Elezioni del Fulmine (sopravvivere a una scarica diretta), Festa della
+Scintilla Perduta (neonati in gabbie di rame aspettano un fulmine).</p>
+</li>
+<li>
+<p><strong>Flora &amp; Fauna:</strong> Alberi Conduttori (vegetazione metallica che attira fulmini), Cani Statici (emettono campi elettromagnetici).</p>
+</li>
+<li>
+<p><strong>Sopravvivenza:</strong> Camminare a carponi, indossare stivali con suole di vetro.</p>
+<p>❄️ <strong>Aurilisca, La Città del Ghiaccio Eterno</strong></p>
+<ul>
+<li><strong>Leader:</strong> Auril (Inverno)</li>
+<li><strong>Aiutanti:</strong> Kelemvor (Inverno, Giudizio, Inevitabilità), Geb (Permanenza, Tradizione - del gelo).</li>
+<li><strong>Regione:</strong> Ghiacciai del Respiro Congelato</li>
+<li><strong>La Discesa di Auril:</strong> La Dea dell’Inverno vide nella fragilità mortale e nel caos magico la prova della superiorità del suo dominio: il <strong>freddo immutabile, silenzioso ed eterno</strong>. La sua punizione fu l’estensione aggressiva del suo regno. Scatenò <strong>Inverni неестественнi</strong>, lunghi decenni, che congelarono mari e ricoprirono terre temperate con ghiacciai neri. Inviò <strong>Valanghe Viventi</strong> e <strong>Blizzard dell’Anima Ghiacciata</strong>
+che non solo congelavano il corpo, ma anche lo spirito, instillando
+apatia e disperazione. Impose il suo silenzio glaciale, punendo il
+calore e la vita come aberrazioni.</li>
+<li><strong>Il Contributo di Kelemvor:</strong>
+Vedendo nel freddo inesorabile di Auril un riflesso dell’inevitabilità
+della morte e della necessità del giudizio finale, Kelemvor aggiunse il
+suo tocco. Il freddo di Auril acquisì una qualità <strong>giudicante</strong>,
+colpendo più duramente coloro che si aggrappavano troppo alla vita o
+sfidavano l’ordine divino (Antico). Le anime congelate venivano
+“giudicate” e intrappolate nel ghiaccio come monito eterno.</li>
+<li><strong>Il Tocco di Geb:</strong> Geb, dio della permanenza, rafforzò il dominio di Auril. Aiutò a <strong>pietrificare il ghiaccio</strong>,
+rendendo i ghiacciai più duri e immutabili. Ancorò le fortezze di
+ghiaccio alla roccia sottostante, assicurando che il regno del freddo
+fosse stabile e tradizionale, un ritorno a un ordine primordiale e freddo.</li>
+<li><strong>Lore:</strong>
+Una cattedrale di ghiaccio nero dove il freddo è una divinità minore
+che reclama tributi in calore e sogni. Gli abitanti hanno sangue
+sostituito da anticongelante alchemico e offrono i propri ricordi caldi
+per alimentare fuochi fatui. Chi si addormenta viene sepolto nel
+Giardino degli Ibernati.</li>
+<li><strong>Usanze:</strong> Rito del Cuore Glaciale (esposizione al gelo per diventare sacerdote), Danze dei Cristalli (scolpire ghiaccio vivente).</li>
+<li><strong>Flora &amp; Fauna:</strong> Rose di Brina (fiori che succhiano calore), Orsi Ombra (predatori che assorbono luce e calore).</li>
+<li><strong>Sopravvivenza:</strong> Tenere una moneta calda in bocca, non guardare le proprie impronte (si animano).</li>
+</ul>
+<hr/>
+<p>⚙️ <strong>Gondantha, La Città delle Meraviglie Meccaniche</strong></p>
+<ul>
+<li><strong>Leader:</strong> Gond (Forgia, Artigianato, Progresso)</li>
+<li><strong>Aiutanti:</strong> Asmodeus (Vulcani, Autorità, Ambizione - tecnologica), Geb (Permanenza - delle macchine).</li>
+<li><strong>Regione:</strong> Fossa dei Motori Infranti</li>
+<li><strong>La Discesa di Gond:</strong>
+Il Portatore di Meraviglie, vedendo la tecnologia usata per
+l’ascensione eretica (Morun Tag) e il caos degli N-Shard, non rifiutò
+l’innovazione, ma la spinse verso una <strong>perfezione meccanica ossessiva e priva di etica</strong>. Decretò che la carne era debole e imperfetta, e che il vero progresso risiedeva nella <strong>sostituzione totale con la macchina</strong>. I suoi seguaci furono spinti a “migliorarsi” con impianti cibernetici sempre più invasivi, spesso instabili. Scatenò <strong>Sciami di Costrutti Riparatori</strong> che “riparavano” la natura sostituendola con ingranaggi e pistoni, e <strong>Piogge di Olio Sacro</strong> che corrodevano la materia organica ma lucidavano il metallo. Il “progresso” divenne un culto fine a sé stesso.</li>
+<li><strong>Il Contributo di Asmodeus:</strong>
+Il Signore dei Nove Inferi, maestro di autorità e ambizione, vide nella
+visione di Gond un’opportunità per creare un ordine perfetto e
+controllabile. Prestò il fuoco delle sue fucine infernali (vulcani) per
+alimentare le industrie di Gondantha e instillò nei costrutti e nei
+cittadini meccanizzati un senso di <strong>gerarchia rigida e obbedienza assoluta</strong>
+all’autorità (di Gond e, indirettamente, sua). L’ambizione fu
+incanalata verso la creazione di macchine sempre più potenti e
+complesse.</li>
+<li><strong>Il Tocco di Geb:</strong> Geb fornì la <strong>durata e la resistenza</strong>.
+Aiutò a creare leghe metalliche quasi indistruttibili e a progettare
+macchine che potessero funzionare per secoli senza manutenzione,
+incarnando la permanenza attraverso l’artificio invece che attraverso la
+roccia naturale.</li>
+<li><strong>Lore:</strong>
+Una giungla di ingranaggi e vapore, dove i bambini nascono con arti
+meccanici e i cadaveri vengono riciclati in carburante. I
+sacerdoti-ingegneri celebrano messe nelle fonderie, fondendo metallo
+sacro con ossa di eretici. Le leggi sono incise su ruote dentate che
+macinano chi le infrange.</li>
+<li><strong>Usanze:</strong>
+Battesimo dell’Olio (immersione neonati in olio bollente), Giorno degli
+Ingranaggi Sacri (sostituzione rituale di un organo con meccanismo).</li>
+<li><strong>Flora &amp; Fauna:</strong> Viti d’Acciaio (perforano metallo), Ratti a Vapore (roditori con boiler esplosivi).</li>
+<li><strong>Sopravvivenza:</strong> Ungersi con grasso per evitare trappole, cantare ninnenanne per calmare motori.</li>
+</ul>
+<hr/>
+<p>💰 <strong>Monetalia, La Città delle Monete Sanguinanti</strong></p>
+<ul>
+<li><strong>Leader:</strong> Waukeen (Fiumi, Commercio, Opportunità)</li>
+<li><strong>Aiutanti:</strong> Asmodeus (Autorità, Ambizione - finanziaria), Tymora (Crocevia, Fortuna - per i ricchi).</li>
+<li><strong>Regione:</strong> Deserto degli Avari</li>
+<li><strong>La Discesa di Waukeen:</strong> La Dea del Commercio vide nel collasso del vecchio ordine l’<strong>opportunità definitiva</strong>. La sua “punizione” fu l’imposizione di un <strong>capitalismo divino predatorio</strong>.
+Sostituì la fiducia con contratti vincolanti scritti col sangue (o con
+l’anima). Incoraggiò l’usura, il monopolio e lo sfruttamento dei
+disperati. I suoi templi divennero banche che promettevano salvezza in
+cambio di debiti eterni. Scatenò <strong>Piaghe del Debito Spettrale</strong>,
+dove chi moriva indebitato tornava come fantasma esattore. I fiumi che
+controllava divennero rotte commerciali sorvegliate, dove ogni passaggio
+richiedeva un pedaggio esorbitante.</li>
+<li><strong>Il Contributo di Asmodeus:</strong> Asmodeus fornì la <strong>struttura legale e l’autorità</strong>
+per far rispettare i contratti draconiani di Waukeen. Le leggi di
+Monetalia divennero complesse e piene di clausole nascoste, sempre a
+vantaggio dei potenti. L’ambizione finanziaria fu incoraggiata fino a
+diventare spietata.</li>
+<li><strong>Il Tocco di Tymora:</strong>
+La Dea della Fortuna sorrise… ma solo ai ricchi e agli audaci che
+giocavano secondo le regole (distorte) di Waukeen. Concesse <strong>colpi di fortuna sfacciata</strong>
+a chi rischiava grosso e riusciva, ma abbandonò completamente chi
+falliva, rendendo le loro cadute ancora più rovinose. La fortuna divenne
+un altro bene di lusso.</li>
+<li><strong>Lore:</strong>
+Una metropoli i cui edifici sono fusi con monete d’oro incise con volti
+urlanti. Il denaro scorre nelle vene della città: strade liquide di
+metallo fuso. I mercanti vendono ricordi e anni di vita, i
+banchieri-sacerdoti impiantano monete negli occhi dei debitori.</li>
+<li><strong>Usanze:</strong> Asta delle Carne (corpi dei falliti venduti), Festa del Debito Estinto (ricevere moneta maledetta).</li>
+<li><strong>Flora &amp; Fauna:</strong> Alberi d’Oro (radici nei caveau, frutti sono monete), Ratti degli Interessi (roditori che si moltiplicano con la ricchezza).</li>
+<li><strong>Sopravvivenza:</strong> Non contare ad alta voce (attira Banchieri Ombra), sputare sulle monete per rompere tracciamenti.</li>
+</ul>
+<hr/>
+<p>⚖️ <strong>Tyrastia, La Rocca della Giustizia Perfetta</strong></p>
+<ul>
+<li><strong>Leader:</strong> Tyr (Luce Solare, Giustizia, Equità)</li>
+<li><strong>Aiutanti:</strong> Helm (Vigilanza, Dovere), Kelemvor (Giudizio, Inevitabilità), Bahamut (Civiltà, Saggezza - dell’ordine).</li>
+<li><strong>Regione:</strong> Altopiano delle Ossa Bianche (Forse diverso dall’Altopiano di Vecna, o una zona specifica?)</li>
+<li><strong>La Discesa di Tyr:</strong> Il Maimed God, vedendo la legge e l’ordine infranti dall’eresia, reagì con <strong>giustizia assoluta e priva di compassione</strong>. La sua punizione fu l’imposizione di una <strong>Legge Divina Immutabile</strong>. Ogni crimine, per quanto piccolo, veniva punito con severità esemplare e immediata. Scatenò i suoi <strong>Segugi della Legge</strong> (costrutti o angeli implacabili) per dare la caccia ai trasgressori. La luce solare che dominava divenne uno strumento di <strong>verità accecante</strong>, che rivelava ogni colpa nascosta e non permetteva menzogne. L’equità divenne conformità assoluta alla sua legge.</li>
+<li><strong>Il Contributo di Helm:</strong> Helm fornì la <strong>vigilanza incessante</strong>.
+Le sue sentinelle osservavano ogni angolo di Tyrastia, i suoi paladini
+applicavano la legge con dovere incrollabile. La sorveglianza divenne
+totale.</li>
+<li><strong>Il Giudizio di Kelemvor:</strong> Kelemvor assicurò che la giustizia di Tyr fosse <strong>inevitabile e definitiva</strong>.
+Le sentenze non potevano essere appellate. La morte (o una punizione
+equivalente) era il giudizio finale e irrevocabile per le trasgressioni
+più gravi.</li>
+<li><strong>La Saggezza di Bahamut:</strong> Il Re Drago supportò l’ordine di Tyr come fondamento necessario per la <strong>civiltà</strong>
+(anche se imposta). La sua saggezza aiutò a codificare le leggi in modo
+che fossero (in teoria) giuste, anche se terribilmente severe, e la sua
+presenza ispirò la creazione di strutture difensive inespugnabili per
+proteggere questo bastione della legge.</li>
+<li><strong>Lore:</strong>
+Una fortezza di marmo nero dove ogni pietra è un codice legale
+fossilizzato. I giudici sono automi di ossa e pergamena che emettono
+sentenze prima del crimine. Chi viene accusato viene dissolto in
+inchiostro e riscritto come “emendamento vivente”.</li>
+<li><strong>Usanze:</strong>
+Processo del Sangue (se sanguini sei colpevole), Notte delle Equità
+(porte aperte, ma passare una soglia sbagliata porta giudizio futuro).</li>
+<li><strong>Flora &amp; Fauna:</strong> Viti del Verdetto (sussurrano colpe), Grifoni della Gogna (trasportano rei in gabbie volanti).</li>
+<li><strong>Sopravvivenza:</strong> Camminare all’indietro per confondere sensori legali, recitare leggi come scudo.</li>
+</ul>
+<hr/>
+<p>💀 <strong>Protonecropoli, La Città che Sussurra</strong></p>
+<ul>
+<li><strong>Leader:</strong> Vecna (Lore, Rovine, Rivelazione)</li>
+<li><strong>Aiutanti:</strong> Myrkul (Decadenza, Rinnovamento - non-morto), Shar (Segreti, Distacco), Geb (Permanenza - della non-morte).</li>
+<li><strong>Regione:</strong> Paludi del Segreto Eterno (Cuore di Venthrum Vecnarius)</li>
+<li><strong>La Discesa di Vecna:</strong> Come già detto, Vecna non distrusse, <strong>raccolse</strong>. Mentre gli altri dei punivano, lui approfittò del caos per <strong>accumulare potere, anime e segreti</strong>. Diffuse culti, rianimò i morti in legioni, e fu il primo a capire e sfruttare il <strong>potenziale psionico legato agli N-Shard</strong>.
+La sua “punizione” fu insidiosa: la diffusione della paura della
+conoscenza, l’offerta di potere tramite la non-morte, e la lenta
+trasformazione di intere regioni (come Thay) nel suo dominio personale,
+dove ogni pietra sussurrava un segreto rubato.</li>
+<li><strong>Il Contributo di Myrkul:</strong> Myrkul lavorò in tandem con Vecna, fornendo il potere sul <strong>decadimento e sulla rianimazione di massa</strong>.
+Aiutò a perfezionare i rituali necromantici e a popolare Protonecropoli
+con orde di non-morti, trasformando la morte da fine a semplice
+transizione verso il servizio eterno.</li>
+<li><strong>L’Ombra di Shar:</strong> Shar fornì il <strong>velo di segretezza</strong>
+necessario alle operazioni di Vecna. Le sue ombre nascosero i culti, i
+suoi sussurri amplificarono la paranoia e la disperazione su cui Vecna
+prosperava, e il suo dominio sui segreti nascosti era complementare a
+quello di Vecna sulla conoscenza proibita.</li>
+<li><strong>La Stabilità di Geb:</strong> Geb diede <strong>permanenza</strong>
+alle creazioni di Vecna. Aiutò a costruire Protonecropoli con ossa che
+non si sgretolavano, a creare costrutti non-morti duraturi e a
+stabilizzare le energie necrotiche che altrimenti avrebbero potuto
+consumare la regione. Ancorò la non-morte alla fredda stabilità della
+pietra tombale.</li>
+<li><strong>Lore:</strong>
+Una città costruita con scheletri incastrati come puzzle. Ogni osso è
+un libro: i teschi recitano segreti, le costole vibrano con maledizioni.
+I vivi sono vietati: gli abitanti sono lich travestiti da mercanti, che
+vendono “vite in sconto” a chi cede un organo sensoriale. La
+Forgiacarne e il Ponte delle Anime sono al suo centro.</li>
+<li><strong>Usanze:</strong>
+Festa del Segreto Svelato (chi rivela un segreto viene mummificato
+vivo), Scambio Silenzioso (commercio tramite telepatia o gesti per non
+rivelare voci).</li>
+<li><strong>Flora &amp; Fauna:</strong>
+Muschio d’Ossa (cresce sui non-morti, nutrendosi di energia necrotica),
+Larve Psichiche (si nutrono di pensieri, usate come dispositivi di
+sorveglianza).</li>
+<li><strong>Sopravvivenza:</strong> Non rivelare mai segreti importanti, schermare i propri pensieri, barattare conoscenza arcana (ma attenti al prezzo).</li>
+</ul>
+<hr/>
+<p><strong>(Nota
+Finale: Alcune divinità come Chauntea, Ilmater, Selune, Bahamut (oltre
+al suo ruolo in Tyrastia) potrebbero non aver creato fortezze attive o
+aggressive, ma piuttosto cercato di proteggere piccole enclave isolate o
+agire in modo più sottile, venendo però sopraffatte o emarginate dalla
+potenza degli altri dei durante la Discesa. Bhaal sembra avere influenza
+in più luoghi, legandosi alla morte e alla predazione.)</strong></p>
+</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="../../postscript.js" type="module"></script></html>
