@@ -78,8 +78,8 @@ const config: QuartzConfig = {
       Plugin.TagPage(),
       // THE FIX PART 2: Remove the `site` block from here
       Plugin.ContentIndex({
-        enableSiteMap: true,
-        enableRSS: true,
+        enableSiteMap: true, // A sitemap is useful for search engines, so keep this true.
+        enableRSS: false,    // <-- CHANGE THIS TO FALSE
       }),
       // END FIX PART 2
       Plugin.Assets(),
