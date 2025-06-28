@@ -69,11 +69,17 @@ const config: QuartzConfig = {
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
-      Plugin.ContentIndex({
-        // This is the key change: these are now options for the plugin
-        // instead of separate plugins, preventing the plain text output.
+ Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
+        rssFullContent: false, // Optional: keeps the RSS feed small
+        // This provides the full context for URL generation
+        site: {
+            title: "Globe Seekers Campaign", // Your page title
+            owner: "adunis", // Your GitHub username
+            baseUrl: "globeseekers", // Your repo name
+            author: "adunis", // Your name/handle
+        }
       }),
       Plugin.Assets(),
       Plugin.Static(),
