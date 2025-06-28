@@ -1,9 +1,8 @@
 name: Deploy Quartz
 on:
-  # This action runs when you push to the 'main' branch of this (quartz) repo.
   push:
     branches:
-      - main
+      - v4  # <--- MAKE SURE THIS SAYS v4
   # This action also runs when it receives a 'vault-updated' signal from your vault repo.
   repository_dispatch:
     types: [vault-updated]
