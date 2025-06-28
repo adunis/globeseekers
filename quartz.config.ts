@@ -8,7 +8,14 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
+    // THE FIX PART 1: Define the full domain and author here
+    author: {
+        name: "adunis",
+        url: "https://github.com/adunis",
+    },
+    // The name of the repository being published
     baseUrl: "globeseekers",
+    // END FIX PART 1
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
@@ -69,18 +76,12 @@ const config: QuartzConfig = {
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
- Plugin.ContentIndex({
+      // THE FIX PART 2: Remove the `site` block from here
+      Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
-        rssFullContent: false, // Optional: keeps the RSS feed small
-        // This provides the full context for URL generation
-        site: {
-            title: "Globe Seekers Campaign", // Your page title
-            owner: "adunis", // Your GitHub username
-            baseUrl: "globeseekers", // Your repo name
-            author: "adunis", // Your name/handle
-        }
       }),
+      // END FIX PART 2
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
