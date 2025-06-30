@@ -73,7 +73,9 @@ const config: QuartzConfig = {
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
-      Plugin.ContentPage(),
+           Plugin.ContentPage({
+        root: "index.md",
+      }),
       Plugin.FolderPage(),
       Plugin.TagPage(),
       Plugin.ContentIndex(), // Simplified this back, as the error is elsewhere.
