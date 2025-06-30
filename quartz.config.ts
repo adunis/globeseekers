@@ -74,7 +74,7 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
            Plugin.ContentPage({
-        root: "index.md",
+        root: "Globeseekers II - The Godfall Mandate.md.md",
       }),
       Plugin.FolderPage(),
       Plugin.TagPage(),
