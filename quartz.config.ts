@@ -13,7 +13,8 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "globeseekers",
+    // THIS IS THE CORRECTED LINE, BASED ON THE OFFICIAL DOCUMENTATION
+    baseUrl: "adunis.github.io/globeseekers",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
@@ -64,21 +65,20 @@ const config: QuartzConfig = {
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      // The CrawlLinks plugin should NOT have a removePrefix here anymore
-      // since you flattened your vault structure.
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
-      Plugin.Description(), // This is correctly placed here as a transformer.
+      Plugin.Description(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
-           Plugin.ContentPage({
-        root: "Globeseekers II - The Godfall Mandate.md.md",
-      }),
+      Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
-      Plugin.ContentIndex(), // Simplified this back, as the error is elsewhere.
+      Plugin.ContentIndex({
+        enableSiteMap: true,
+        enableRSS: false, // Keeping RSS disabled as you requested
+      }),
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
